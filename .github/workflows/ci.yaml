@@ -1,0 +1,27 @@
+name: CI - Build & lint
+
+on:
+  push: 
+      branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: install checkout code
+        uses: actions/checkout@v5
+
+      - name: Install node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '25'
+          cache: 'npm'
+
+      - name: install dependencies
+        run: npm ci
+
+      - name: start eslint
+        run: npm run lint
+
+     

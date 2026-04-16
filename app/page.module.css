@@ -1,0 +1,73 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c3cd1;
+  gap: 20px;
+}
+
+.titre {
+  color: #FDB927;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.description {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bolder;
+  
+}
+
+.input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 6px solid #FDB927;
+  width: 250px;
+  text-align: center;
+}
+
+.bouton {
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #FDB927;
+  color: #1a1a2e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.bouton:hover {
+  background-color: #552583;
+  color: #ffffff;
+}
+
+.message {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.jeu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.choix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.label {
+  color: #FDB927;
+  font-size: 20px;
+  font-weight: bold;
+}
