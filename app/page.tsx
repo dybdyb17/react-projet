@@ -12,6 +12,7 @@ export default function Home() {
 
   useEffect(() => {
   if (categorie === "ordi") {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMin(500);
     setMax(2000);
     setPrix(Math.floor(Math.random() * (2000 - 500 + 1)) + 500);
